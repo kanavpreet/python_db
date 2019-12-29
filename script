@@ -1,0 +1,6 @@
+import mysql.connector
+mydb=mysql.connector.connect(host="localhost",root="root",password="password123")
+print(mydb)
+mycursor=mydb.cursor()
+mycursor.execute("show databases")
+ 
