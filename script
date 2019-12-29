@@ -3,4 +3,10 @@ mydb=mysql.connector.connect(host="localhost",root="root",password="password123"
 print(mydb)
 mycursor=mydb.cursor()
 mycursor.execute("show databases")
+
+######Performing CRUD operation#########
+mycursor.execute("create database Data (name varchar(250), employeid int(20))")
+mycursor.execute("Update Data SET employeeid=400 where name='kanav'")
+mydb.commit()
+
  
