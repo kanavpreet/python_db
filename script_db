@@ -1,0 +1,10 @@
+#######ibm-db Connector ####
+import ibm_db
+connector=ibm_db.connect("database=, host=,user= , password=")
+
+####  DB2 Connector ######
+import DB2
+connector=DB2.connect ("dsn=<<>>, uid= , pwd =")
+curs=connector.cursor()
+mydb=curs.execute("Create table STUDENTS where name varchar() age int")
+mydb1=curs.execute("select * from school")
